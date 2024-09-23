@@ -1,6 +1,6 @@
 # 🧑‍💼 Shuvendu Pritam Das | Featured Projects
 
-![Data Science Professional GIF](https://media.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif)
+![Data Science and AI](https://media.giphy.com/media/xUPGcM4yf9ChR8L7bi/giphy.gif)
 
 Welcome to my **Featured Projects** section! Here, you can explore some of my most significant work in Data Science and AI. Each project highlights my skills and contributions in various domains.
 
