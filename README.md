@@ -12,14 +12,14 @@ Welcome to my **Featured Projects** section! Here, you can explore some of my mo
 *Developed an AI chatbot using fine-tuned GPT models for customer service interactions.*
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
-  <div style="flex-grow: 1;">
+  <div>
     <ul>
       <li><strong>Tech Stack:</strong> Python, Transformers</li>
       <li><strong>Highlights:</strong> Natural language understanding, conversation flow design</li>
       <li><strong>Outcome:</strong> Improved response time and user satisfaction.</li>
     </ul>
   </div>
-  <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWljb3V0MHNscGNhdjVwem42eW5nbHFlZ3ljcHF2aWh1MXg3a2RsaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="200" alt="Chatbot GIF">
+  <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWljb3V0MHNscGNhdjVwem42eW5nbHFlZ3ljcHF2aWh1MXg3a2RsaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="200" alt="Chatbot GIF" style="margin-left: 20px;">
 </div>
 
 ---
