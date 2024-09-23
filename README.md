@@ -1,6 +1,6 @@
 # 🧑‍💼 Shuvendu Pritam Das | Featured Projects
 
-![Data Science and AI](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWljb3V0MHNscGNhdjVwem42eW5nbHFlZ3ljcHF2aWh1MXg3a2RsaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LaVp0AyqR5bGsC5Cbm/giphy.gif)
+![Data Science and AI](https://media.giphy.com/media/xUPGcM4yf9ChR8L7bi/giphy.gif)
 
 Welcome to my **Featured Projects** section! Here, you can explore some of my most significant work in Data Science and AI. Each project highlights my skills and contributions in various domains.
 
@@ -11,9 +11,16 @@ Welcome to my **Featured Projects** section! Here, you can explore some of my mo
 ### 1. 🤖 [Chatbot Development](https://github.com/SPritamDas/projectnameChatbot)
 *Developed an AI chatbot using fine-tuned GPT models for customer service interactions.*
 
-- **Tech Stack:** Python, Transformers
-- **Highlights:** Natural language understanding, conversation flow design
-- **Outcome:** Improved response time and user satisfaction.
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <div style="flex-grow: 1;">
+    <ul>
+      <li><strong>Tech Stack:</strong> Python, Transformers</li>
+      <li><strong>Highlights:</strong> Natural language understanding, conversation flow design</li>
+      <li><strong>Outcome:</strong> Improved response time and user satisfaction.</li>
+    </ul>
+  </div>
+  <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWljb3V0MHNscGNhdjVwem42eW5nbHFlZ3ljcHF2aWh1MXg3a2RsaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="200" alt="Chatbot GIF">
+</div>
 
 ---
 
