@@ -4,7 +4,8 @@
 ---
 
 ## Project Overview
-Pneumonia is a severe infection that inflames the air sacs in one or both lungs, and its early detection is crucial for effective treatment. In this project, we aim to develop an automated system for detecting pneumonia from chest X-ray images using **Convolutional Neural Networks (CNN)** and **Transfer Learning**. By leveraging a pre-trained model, we enhance the ability of the AI system to distinguish between **Pneumonia** and **Normal** cases in pediatric patients.
+Pneumonia is a severe infection that inflames the air sacs in one or both lungs, and its early detection is crucial for effective treatment. In this project, we aim to develop an automated system for detecting pneumonia from chest X-ray images using **Convolutional Neural Networks (CNN)** and **Transfer Learning**. By leveraging a pre-trained model, we enhance the ability of the AI system to dis![image_processing20220408-20581-17cljyl](https://github.com/user-attachments/assets/b4efeb89-2f3b-44b1-be39-2184d934f398)
+tinguish between **Pneumonia** and **Normal** cases in pediatric patients.
 
 The project utilizes the **Chest X-Ray Images (Pneumonia)** dataset, which contains over 5,800 X-ray images categorized into two groups: **Pneumonia** and **Normal**. We employ advanced deep learning techniques to create a robust classification model, which can significantly aid in the early diagnosis of pneumonia, especially in regions where access to medical expertise is limited.
 
