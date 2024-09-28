@@ -1,8 +1,7 @@
 # Pneumonia Detection from Chest X-Ray Images using CNN and Transfer Learning
 
 <div style="display: flex; justify-content: space-around;">
-    <img src="https://github.com/user-attachments/assets/2b4108a6-d447-4cd0-a91a-93b54f9c42ec" alt="Pneumonia Detection" style="width: 45%;"/>
-    <img src="https://github.com/user-attachments/assets/b4efeb89-2f3b-44b1-be39-2184d934f398" alt="X-Ray Example" style="width: 45%;"/>
+    <img src="https://github.com/user-attachments/assets/2b4108a6-d447-4cd0-a91a-93b54f9c42ec" alt="Pneumonia Detection" style="width: 100%;"/>
 </div>
 
 ---
