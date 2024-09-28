@@ -1,7 +1,7 @@
 # Pneumonia Detection from Chest X-Ray Images using CNN and Transfer Learning
 
-![Pneumonia X-Ray Example](https://raw.githubusercontent.com/Anil2198/Pneumonia-Detection/master/Pneumonia.jpeg)
-![Normal X-Ray Example](https://upload.wikimedia.org/wikipedia/commons/e/ec/Chest_xray.jpg)
+![image](https://github.com/user-attachments/assets/cffdf28e-14ca-4539-b499-dea9ee687ba7)
+
 
 ---
 
