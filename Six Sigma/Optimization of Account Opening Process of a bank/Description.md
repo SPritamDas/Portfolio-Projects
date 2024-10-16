@@ -10,10 +10,14 @@ Recently, after a significant marketing effort, they started receiving over 3500
 5.	Identity Proof No 
 6.	Product Code 
 7.	Email Address 
-<br> Any incorrect section is considered a defect and must be re-processed, resulting in high TAT.
+<br>
+Any incorrect section is considered a defect and must be re-processed, resulting in high TAT.
+<br>
 The Bank is losing $3750 every day primarily on rework and penalties. The customers are also dissatisfied as the account opening is taking more time than promised. In the wake of the current business situation, the management team decides to initiate a Six Sigma project to reduce defects and achieve target account opening time.
 <br>
 1.	How can data be used to identify the root causes of the increased defects in the Customer Application Form (CAF) that contribute to errors in account opening processes?
+<br>
 2.	Using the Six Sigma approach, what can be implemented to streamline the account opening process and handle increased volumes efficiently, ensuring that the target of opening accounts within 48 hours is consistently met?
+<br>
 3.	Develop a strategic plan to reduce operational costs while maintaining or improving overall efficiency and productivity?
 The PPT should have maximum 5 slides (excluding introduction)
