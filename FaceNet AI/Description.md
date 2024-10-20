@@ -31,63 +31,52 @@ The model architecture combines **CNN** with **Transfer Learning** using the **V
 - **Optimizer**: Adam optimizer for efficient training.
 - **Loss Function**: Categorical Cross-Entropy for multi-class classification tasks.
 
-Model Architecture:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Layer (type)                  | Output Shape         | Param #     | Connected to
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Input Layer (InputLayer)      | (None, 224, 224, 3)  | 0           | -
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Block 1:
-    Conv2D (block1_conv1)      | (None, 224, 224, 64) | 1,792       | input_layer[0][0]
-    Conv2D (block1_conv2)      | (None, 224, 224, 64) | 36,928      | block1_conv1[0][0]
-    MaxPooling2D (block1_pool) | (None, 112, 112, 64) | 0           | block1_conv2[0][0]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Block 2:
-    Conv2D (block2_conv1)      | (None, 112, 112, 128)| 73,856      | block1_pool[0][0]
-    Conv2D (block2_conv2)      | (None, 112, 112, 128)| 147,584     | block2_conv1[0][0]
-    MaxPooling2D (block2_pool) | (None, 56, 56, 128)  | 0           | block2_conv2[0][0]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Block 3:
-    Conv2D (block3_conv1)      | (None, 56, 56, 256)  | 295,168     | block2_pool[0][0]
-    Conv2D (block3_conv2)      | (None, 56, 56, 256)  | 590,080     | block3_conv1[0][0]
-    Conv2D (block3_conv3)      | (None, 56, 56, 256)  | 590,080     | block3_conv2[0][0]
-    MaxPooling2D (block3_pool) | (None, 28, 28, 256)  | 0           | block3_conv3[0][0]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Block 4:
-    Conv2D (block4_conv1)      | (None, 28, 28, 512)  | 1,180,160   | block3_pool[0][0]
-    Conv2D (block4_conv2)      | (None, 28, 28, 512)  | 2,359,808   | block4_conv1[0][0]
-    Conv2D (block4_conv3)      | (None, 28, 28, 512)  | 2,359,808   | block4_conv2[0][0]
-    MaxPooling2D (block4_pool) | (None, 14, 14, 512)  | 0           | block4_conv3[0][0]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Block 5:
-    Conv2D (block5_conv1)      | (None, 14, 14, 512)  | 2,359,808   | block4_pool[0][0]
-    Conv2D (block5_conv2)      | (None, 14, 14, 512)  | 2,359,808   | block5_conv1[0][0]
-    Conv2D (block5_conv3)      | (None, 14, 14, 512)  | 2,359,808   | block5_conv2[0][0]
-    MaxPooling2D (block5_pool) | (None, 7, 7, 512)    | 0           | block5_conv3[0][0]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Flatten Layer:
-    Flatten                    | (None, 25088)        | 0           | block5_pool[0][0]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Dense Layers:
-    Dense (dense)               | (None, 512)          | 12,845,568  | flatten[0][0]
-    Dense (dense_4)             | (None, 512)          | 12,845,568  | flatten[0][0]
-    Dense (dense_8)             | (None, 512)          | 12,845,568  | flatten[0][0]
-    Dense (dense_1)             | (None, 256)          | 131,328     | dense[0][0]
-    Dense (dense_5)             | (None, 256)          | 131,328     | dense_4[0][0]
-    Dense (dense_9)             | (None, 256)          | 131,328     | dense_8[0][0]
-    Dense (dense_2)             | (None, 128)          | 32,896      | dense_1[0][0]
-    Dense (dense_6)             | (None, 128)          | 32,896      | dense_5[0][0]
-    Dense (dense_10)            | (None, 128)          | 32,896      | dense_9[0][0]
-    Dense (dense_3)             | (None, 64)           | 8,256       | dense_2[0][0]
-    Dense (dense_7)             | (None, 64)           | 8,256       | dense_6[0][0]
-    Dense (dense_11)            | (None, 64)           | 8,256       | dense_10[0][0]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Output Layers:
-    Dense (age)                 | (None, 1)            | 65          | dense_3[0][0]
-    Dense (gender)              | (None, 1)            | 65          | dense_7[0][0]
-    Dense (ethnicity)           | (None, 5)            | 325         | dense_11[0][0]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Total params: 53,769,287 (205.11 MB)
-Trainable params: 39,054,599 (148.98 MB)
-Non-trainable params: 14,714,688 (56.13 MB)
+### Model Architecture
 
+| Layer Type            | Output Shape           | Param #       | Connected to               |
+|-----------------------|------------------------|---------------|----------------------------|
+| **Input Layer**        | (None, 224, 224, 3)     | 0             | -                          |
+| **Block 1**            |                        |               |                            |
+| Conv2D (block1_conv1)  | (None, 224, 224, 64)    | 1,792         | input_layer[0][0]          |
+| Conv2D (block1_conv2)  | (None, 224, 224, 64)    | 36,928        | block1_conv1[0][0]         |
+| MaxPooling2D (block1_pool) | (None, 112, 112, 64) | 0             | block1_conv2[0][0]         |
+| **Block 2**            |                        |               |                            |
+| Conv2D (block2_conv1)  | (None, 112, 112, 128)   | 73,856        | block1_pool[0][0]          |
+| Conv2D (block2_conv2)  | (None, 112, 112, 128)   | 147,584       | block2_conv1[0][0]         |
+| MaxPooling2D (block2_pool) | (None, 56, 56, 128)  | 0             | block2_conv2[0][0]         |
+| **Block 3**            |                        |               |                            |
+| Conv2D (block3_conv1)  | (None, 56, 56, 256)     | 295,168       | block2_pool[0][0]          |
+| Conv2D (block3_conv2)  | (None, 56, 56, 256)     | 590,080       | block3_conv1[0][0]         |
+| Conv2D (block3_conv3)  | (None, 56, 56, 256)     | 590,080       | block3_conv2[0][0]         |
+| MaxPooling2D (block3_pool) | (None, 28, 28, 256)  | 0             | block3_conv3[0][0]         |
+| **Block 4**            |                        |               |                            |
+| Conv2D (block4_conv1)  | (None, 28, 28, 512)     | 1,180,160     | block3_pool[0][0]          |
+| Conv2D (block4_conv2)  | (None, 28, 28, 512)     | 2,359,808     | block4_conv1[0][0]         |
+| Conv2D (block4_conv3)  | (None, 28, 28, 512)     | 2,359,808     | block4_conv2[0][0]         |
+| MaxPooling2D (block4_pool) | (None, 14, 14, 512)  | 0             | block4_conv3[0][0]         |
+| **Block 5**            |                        |               |                            |
+| Conv2D (block5_conv1)  | (None, 14, 14, 512)     | 2,359,808     | block4_pool[0][0]          |
+| Conv2D (block5_conv2)  | (None, 14, 14, 512)     | 2,359,808     | block5_conv1[0][0]         |
+| Conv2D (block5_conv3)  | (None, 14, 14, 512)     | 2,359,808     | block5_conv2[0][0]         |
+| MaxPooling2D (block5_pool) | (None, 7, 7, 512)    | 0             | block5_conv3[0][0]         |
+| **Flatten**            | (None, 25088)          | 0             | block5_pool[0][0]          |
+| **Dense Layers**       |                        |               |                            |
+| Dense (dense)          | (None, 512)            | 12,845,568    | flatten[0][0]              |
+| Dense (dense_4)        | (None, 512)            | 12,845,568    | flatten[0][0]              |
+| Dense (dense_8)        | (None, 512)            | 12,845,568    | flatten[0][0]              |
+| Dense (dense_1)        | (None, 256)            | 131,328       | dense[0][0]                |
+| Dense (dense_5)        | (None, 256)            | 131,328       | dense_4[0][0]              |
+| Dense (dense_9)        | (None, 256)            | 131,328       | dense_8[0][0]              |
+| Dense (dense_2)        | (None, 128)            | 32,896        | dense_1[0][0]              |
+| Dense (dense_6)        | (None, 128)            | 32,896        | dense_5[0][0]              |
+| Dense (dense_10)       | (None, 128)            | 32,896        | dense_9[0][0]              |
+| Dense (dense_3)        | (None, 64)             | 8,256         | dense_2[0][0]              |
+| Dense (dense_7)        | (None, 64)             | 8,256         | dense_6[0][0]              |
+| Dense (dense_11)       | (None, 64)             | 8,256         | dense_10[0][0]             |
+| **Output Layers**      |                        |               |                            |
+| Dense (age)            | (None, 1)             | 65            | dense_3[0][0]              |
+| Dense (gender)         | (None, 1)             | 65            | dense_7[0][0]              |
+| Dense (ethnicity)      | (None, 5)             | 325           | dense_11[0][0]             |
+| **Total params**       |                        | **53,769,287**|                            |
+| **Trainable params**   |                        | **39,054,599**|                            |
+| **Non-trainable params**|                       | **14,714,688**|                            |
