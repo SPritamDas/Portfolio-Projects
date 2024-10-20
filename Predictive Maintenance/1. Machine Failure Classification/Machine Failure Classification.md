@@ -1,6 +1,6 @@
 # Machine Predictive Maintenance Classification
 
-_For the Code click on below link_
+_For the Code click on the link_
 [🔗 Code Section](https://github.com/SPritamDas/Portfolio-Projects/blob/main/Predictive%20Maintenance/1.%20Machine%20Failure%20Classification/predictive-maintenance-final-project.ipynb)
 
 ## Overview
