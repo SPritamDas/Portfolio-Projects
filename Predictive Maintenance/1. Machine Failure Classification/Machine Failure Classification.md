@@ -1,6 +1,6 @@
 # Machine Predictive Maintenance Classification
 
-[🔗 Code Section]([#https://github.com/SPritamDas/Portfolio-Projects/blob/main/Predictive%20Maintenance/1.%20Machine%20Failure%20Classification/predictive-maintenance-final-project.ipynb))
+[🔗 Code Section]([#https://github.com/SPritamDas/Portfolio-Projects/blob/main/Predictive%20Maintenance/1.%20Machine%20Failure%20Classification/predictive-maintenance-final-project.ipynb])
 
 ## Overview
 This project aims to predict machine failures using a synthetic dataset that reflects real-world scenarios in predictive maintenance. It includes both binary classification to determine whether a machine has failed and multiclass classification to identify the type of failure.
