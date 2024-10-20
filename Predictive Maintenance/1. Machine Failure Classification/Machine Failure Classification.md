@@ -1,28 +1,39 @@
 # Machine Predictive Maintenance Classification
 
+[🔗 Code Section](#code)
+
 ## Overview
-This project aims to predict machine failures using a synthetic dataset that reflects real-world scenarios in predictive maintenance. It includes binary classification to determine whether a machine has failed and multiclass classification to identify the type of failure.
+This project aims to predict machine failures using a synthetic dataset that reflects real-world scenarios in predictive maintenance. It includes both binary classification to determine whether a machine has failed and multiclass classification to identify the type of failure.
+
+---
 
 ## Dataset
-The **Machine Predictive Maintenance Classification Dataset** consists of **10,000 data points** with **14 features**. The dataset is designed to simulate predictive maintenance situations typically encountered in the industry. Due to the challenges of obtaining and publishing real predictive maintenance datasets, this synthetic dataset has been created to fill that gap.
+The **Machine Predictive Maintenance Classification Dataset** consists of **10,000 data points** with **14 features**. This dataset simulates predictive maintenance situations commonly encountered in the industry.
 
-### Features
-- **UID:** Unique identifier ranging from 1 to 10,000
-- **ProductID:** Letter (L, M, H) indicating product quality variants:
-  - L: Low (50% of all products)
-  - M: Medium (30%)
-  - H: High (20%)
-- **Air Temperature [K]:** Generated using a random walk process normalized to a standard deviation of 2 K around 300 K
-- **Process Temperature [K]:** Generated using a random walk process normalized to a standard deviation of 1 K, added to the air temperature plus 10 K
-- **Rotational Speed [rpm]:** Calculated from power of 2860 W, overlaid with normally distributed noise
-- **Torque [Nm]:** Normally distributed around 40 Nm with a standard deviation of 10 Nm (no negative values)
-- **Tool Wear [min]:** Quality variants (H/M/L) add 5/3/2 minutes of tool wear
-- **Target:** Indicates whether the machine has failed (binary)
-- **Failure Type:** Type of failure (multiclass)
+### Dataset Features
+| Feature                  | Description                                               |
+|--------------------------|-----------------------------------------------------------|
+| **UID**                  | Unique identifier ranging from 1 to 10,000               |
+| **ProductID**            | Quality variants (L: Low, M: Medium, H: High)            |
+| **Air Temperature [K]**  | Generated with a random walk process (σ = 2 K)           |
+| **Process Temperature [K]** | Generated with a random walk process + 10 K (σ = 1 K) |
+| **Rotational Speed [rpm]** | Calculated from 2860 W power with noise                |
+| **Torque [Nm]**         | Normally distributed around 40 Nm (σ = 10 Nm)             |
+| **Tool Wear [min]**     | Varies by quality variant (H/M/L: +5/3/2 minutes)         |
+| **Target**               | Indicates machine failure (binary)                        |
+| **Failure Type**         | Type of failure (multiclass)                             |
 
-**Important:** There are two targets. Ensure not to use either of them as features to avoid data leakage:
+### Target Variables
+**Important:** There are two targets. Avoid using either as features to prevent data leakage:
 - **Target:** Failure or Not
 - **Failure Type:** Type of Failure
+
+| Target Variable       | Description                                  |
+|-----------------------|----------------------------------------------|
+| **Failure**           | 1 (Failed), 0 (Not Failed)                  |
+| **Failure Type**      | Categories include Heat Dissipation, etc.   |
+
+---
 
 ## Acknowledgements
 Dataset derived from: [UCI AI4I 2020 Predictive Maintenance Dataset](https://archive.ics.uci.edu/ml/datasets/AI4I+2020+Predictive+Maintenance+Dataset)
@@ -38,23 +49,29 @@ Dataset derived from: [UCI AI4I 2020 Predictive Maintenance Dataset](https://arc
 - Binary Classification
 - Physics
 
+---
+
 ## Dataset File
 - [predictive_maintenance.csv](predictive_maintenance.csv) (531.01 kB)
 
-### Features Summary
-| Feature                  | Description                        |
-|--------------------------|------------------------------------|
-| **UDI**                  | Unique Id                          |
-| **Product ID**           | Product ID                         |
-| **Air Temperature [K]**  | Air temp in K                     |
-| **Process Temperature [K]** | Process temp in K               |
-| **Rotational Speed [rpm]** | Rotational speed                 |
-| **Torque [Nm]**         | Torque                             |
-| **Tool Wear [min]**     | Tool wear in mins                 |
-| **Target**               | If failed or not                  |
-| **Failure Type**         | Type of failure                   |
-
 ### Label Distribution
-- **No Failure:** 97%
-- **Heat Dissipation Failure:** 1%
-- **Other:** 2%
+| Failure Type              | Count | Percentage |
+|---------------------------|-------|------------|
+| **No Failure**            | 9,700 | 97%        |
+| **Heat Dissipation Failure** | 100   | 1%         |
+| **Other Failures**        | 200   | 2%         |
+
+![Label Distribution Chart](link_to_label_distribution_chart.png)
+
+---
+
+## Code
+The code for this project can be found in the [notebook](notebook.ipynb).
+
+## Getting Started
+To get started with this project, clone the repository and open the notebook in Jupyter or any preferred environment. You can run the code to explore the dataset and the predictive models implemented.
+
+### Installation
+```bash
+git clone https://github.com/yourusername/machine-predictive-maintenance.git
+cd machine-predictive-maintenance
