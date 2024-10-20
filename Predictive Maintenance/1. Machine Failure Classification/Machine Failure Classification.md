@@ -1,6 +1,6 @@
 # Machine Predictive Maintenance Classification
 
-[🔗 Code Section](#https://github.com/SPritamDas/Portfolio-Projects/blob/main/Predictive%20Maintenance/1.%20Machine%20Failure%20Classification/predictive-maintenance-final-project.ipynb)
+[🔗 Code Section](https://github.com/SPritamDas/Portfolio-Projects/blob/main/Predictive%20Maintenance/1.%20Machine%20Failure%20Classification/predictive-maintenance-final-project.ipynb)
 
 ## Overview
 This project aims to predict machine failures using a synthetic dataset that reflects real-world scenarios in predictive maintenance. It includes both binary classification to determine whether a machine has failed and multiclass classification to identify the type of failure.
@@ -66,12 +66,4 @@ Dataset derived from: [UCI AI4I 2020 Predictive Maintenance Dataset](https://arc
 ---
 
 ## Code
-The code for this project can be found in the [notebook](notebook.ipynb).
-
-## Getting Started
-To get started with this project, clone the repository and open the notebook in Jupyter or any preferred environment. You can run the code to explore the dataset and the predictive models implemented.
-
-### Installation
-```bash
-git clone https://github.com/yourusername/machine-predictive-maintenance.git
-cd machine-predictive-maintenance
+The code for this project can be found in the [notebook](https://github.com/SPritamDas/Portfolio-Projects/blob/main/Predictive%20Maintenance/1.%20Machine%20Failure%20Classification/predictive-maintenance-final-project.ipynb).
