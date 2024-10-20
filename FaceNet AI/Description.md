@@ -5,7 +5,7 @@
 **FaceNet AI** is an advanced deep learning solution designed for **demographic analysis** from facial images. By utilizing state-of-the-art techniques such as **Convolutional Neural Networks (CNN)**, **Transfer Learning**, and **Data Augmentation**, this project aims to predict **Age**, **Gender**, and **Ethnicity** from facial data with high accuracy and efficiency. The model is built using the **UTKFace Dataset**, which consists of over 20,000 facial images, offering a wide range of demographic diversity for training and testing.
 
 > **Want to explore the code?**  
-> [Click here to view the repository.](https://github.com/SPritamDas/FaceNetAI](https://github.com/SPritamDas/Portfolio-Projects/tree/main/FaceNet%20AI/Code%20Files)
+> [Click here to view the repository.](https://github.com/SPritamDas/Portfolio-Projects/tree/main/FaceNet%20AI/Code%20Files)
 
 ## **Key Features**
 - **Age Estimation**: Predict a person’s age using facial characteristics.
