@@ -62,7 +62,6 @@ Dataset derived from: [UCI AI4I 2020 Predictive Maintenance Dataset](https://arc
 | **Heat Dissipation Failure** | 100   | 1%         |
 | **Other Failures**        | 200   | 2%         |
 
-![Label Distribution Chart](link_to_label_distribution_chart.png)
 
 ---
 
