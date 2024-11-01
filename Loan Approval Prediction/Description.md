@@ -30,23 +30,6 @@ The methodology encompasses the following key steps:
 
 5. **Submission Preparation**: Format the final predictions for submission, ensuring compliance with competition guidelines.
 
-## Model Comparison
-
-| Model                | AUC Score | Description                                     | Hyperparameters                           |
-|----------------------|-----------|-------------------------------------------------|-------------------------------------------|
-| Logistic Regression   | 0.75      | A statistical model that estimates the probability of a binary outcome. | C=1.0, Solver='lbfgs', Max_iter=100    |
-| K-Nearest Neighbors   | 0.78      | A non-parametric method used for classification and regression. | n_neighbors=5, Weights='uniform'        |
-| Decision Tree         | 0.76      | A tree-structured model used for classification tasks. | Max_depth=5, Min_samples_split=10      |
-| Random Forest         | 0.82      | An ensemble method that constructs multiple decision trees. | N_estimators=100, Max_depth=None       |
-| XGBoost              | 0.85      | A boosting method that optimizes the performance through gradient descent. | Learning_rate=0.1, Max_depth=5, N_estimators=100 |
-| AdaBoost             | 0.80      | A boosting technique that adjusts weights to improve weak learners. | N_estimators=50, Learning_rate=1.0     |
-| Gradient Boosting    | 0.83      | An iterative method that minimizes the loss function. | N_estimators=100, Learning_rate=0.1    |
-| CatBoost             | 0.84      | A gradient boosting library that handles categorical features automatically. | Iterations=1000, Learning_rate=0.1      |
-| ANN (Keras)          | 0.87      | A deep learning model that simulates a neural network. | Epochs=100, Batch_size=32, Units=64     |
-| Meta ANN | | | |
-| Weighted Output | | | |
-
-
 ## Conclusion
 This project demonstrates the integration of traditional and cutting-edge techniques in loan approval prediction, aiming to deliver a robust and efficient solution for financial institutions. By leveraging a combination of machine learning and deep learning methodologies, we enhance the ability to make data-driven decisions in the lending process, ultimately improving risk management and customer satisfaction.
 
