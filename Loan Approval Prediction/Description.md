@@ -5,7 +5,7 @@ This project is licensed under the Apache License 2.0.
 
 ## Project Links
 - **Kaggle Notebook**: [Robust Loan Approval Prediction Using ML and DL](https://www.kaggle.com/code/shuvendupritam/robust-loan-approval-prediction-using-ml-and-dl)
-- **GitHub Repository**: [Loan Approval Prediction Project](https://github.com/SPritamDas/Portfolio-Projects/blob/main/Loan%20Approval%20Prediction/loan-approval-prediction-using-ml-dl-and-auto-ml%20(1).ipynb)
+- **GitHub Repository**: [Loan Approval Prediction Project](https://github.com/SPritamDas/Portfolio-Projects/blob/main/Loan%20Approval%20Prediction/robust-loan-approval-prediction-using-ml-and-dl.ipynb)
 
 ## Overview
 The **Robust Loan Approval Prediction** project aims to develop a predictive model for determining loan approval statuses using advanced machine learning (ML) and deep learning (DL) techniques. This initiative responds to the growing need for efficient and reliable loan assessment processes in the financial sector, focusing on minimizing risk and enhancing operational efficiency.
