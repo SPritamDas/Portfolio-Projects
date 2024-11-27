@@ -1,6 +1,9 @@
 # 🚀 **Robust Loan Approval Prediction Using Machine Learning and Deep Learning**  
 
 ![image](https://github.com/user-attachments/assets/9066e5ee-9da2-45d1-96e5-e0ea5fec2a2f)
+
+<br>
+
 *Transforming the loan approval process with advanced AI techniques.*  
 
 ---
