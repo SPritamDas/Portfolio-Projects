@@ -1,7 +1,5 @@
 # **Generative AI Chatbot for PDF Information Retrieval**
 
-
-
 ## **Description**
 This project features a Generative AI-powered chatbot designed for efficient information retrieval from large PDF documents. Utilizing **Gemini API** for generative responses and **Pinecone API** for vector-based search, the chatbot processes 300+ page PDFs by dividing each page into three chunks. This approach ensures enhanced data granularity, improved prediction accuracy, and faster query responses.
 
@@ -16,9 +14,5 @@ This project features a Generative AI-powered chatbot designed for efficient inf
 - **Libraries & APIs**: Flask, Gemini API, Pinecone API, pdfplumber
 - **Development Tools**: Jupyter Notebook
 
-## **Installation**
-### **Prerequisites**
-- Python 3.8 or later
-- Required libraries: `Flask`, `openai`, `pinecone-client`, `pdfplumber`
 
 
